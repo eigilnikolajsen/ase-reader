@@ -1,0 +1,34 @@
+{
+	"author": "Eigil Nikolajsen",
+	"description": "Reads Adobe ASE files.",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"typescript": "^5.6.3"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"ase",
+		"adobe",
+		"color",
+		"reader"
+	],
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"name": "ase-reader",
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"version": "0.0.3"
+}
