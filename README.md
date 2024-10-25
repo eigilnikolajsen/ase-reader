@@ -1,6 +1,6 @@
 # ase-reader
 
-Reads Adobe ASE files.
+AseReader utility class for working with Adobe ASE files in TypeScript.
 
 ## Install
 
