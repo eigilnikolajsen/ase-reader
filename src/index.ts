@@ -4,8 +4,14 @@
  * @copyright Freedom of use.
  */
 
+/**
+ * Represents the type of a color.
+ */
 export type ColorType = "global" | "spot" | "normal";
 
+/**
+ * Represents an RGB color.
+ */
 export interface RGBColor {
 	model: "RGB";
 	r: number;
@@ -15,6 +21,9 @@ export interface RGBColor {
 	type: ColorType;
 }
 
+/**
+ * Represents a CMYK color.
+ */
 export interface CMYKColor {
 	model: "CMYK";
 	c: number;
@@ -24,6 +33,9 @@ export interface CMYKColor {
 	type: ColorType;
 }
 
+/**
+ * Represents a grayscale color.
+ */
 export interface GrayColor {
 	model: "Gray";
 	gray: number;
@@ -31,6 +43,9 @@ export interface GrayColor {
 	type: ColorType;
 }
 
+/**
+ * Represents a LAB color.
+ */
 export interface LABColor {
 	model: "LAB";
 	lightness: number;
@@ -39,24 +54,39 @@ export interface LABColor {
 	type: ColorType;
 }
 
+/**
+ * Represents a color that can be RGB, CMYK, Gray, or LAB.
+ */
 export type Color = RGBColor | CMYKColor | GrayColor | LABColor;
 
+/**
+ * Represents a color entry that contains a name and a color of type Color.
+ */
 export interface ColorEntry {
 	type: "color";
 	name: string;
 	color: Color;
 }
 
+/**
+ * Represents a group entry.
+ */
 export interface GroupEntry {
 	type: "group";
 	name: string;
 	entries: Array<Entry>;
 }
 
+/**
+ * Represents a group end entry.
+ */
 export interface GroupEndEntry {
 	type: "group-end";
 }
 
+/**
+ * Represents an entry that can be a color, group, or group end.
+ */
 export type Entry = ColorEntry | GroupEntry | GroupEndEntry;
 
 /**
