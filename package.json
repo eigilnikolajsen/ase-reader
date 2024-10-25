@@ -1,6 +1,6 @@
 {
 	"author": "Eigil Nikolajsen",
-	"description": "Reads Adobe ASE files.",
+	"description": "AseReader utility class for working with Adobe ASE files in TypeScript.",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"typescript": "^5.6.3"
