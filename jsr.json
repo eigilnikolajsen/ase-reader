@@ -1,5 +1,5 @@
 {
-	"name": "@eigilnikolajsen/vite-plugin-lit-lightningcss",
+	"name": "@eigilnikolajsen/ase-reader",
 	"version": "0.0.3",
 	"exports": "./src/index.ts"
 }
